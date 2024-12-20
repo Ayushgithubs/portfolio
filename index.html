@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="portfolio_image.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Ayush Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Ayush Jaiswal</span>
+        </div>
+        <div class="links">
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="#" onclick="showSection('home')">Home</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <a href="#" onclick="showSection('skills')">Skills</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+          <a href="#" onclick="showSection('projects')">Projects</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <a href="#" onclick="showSection('certificates')">Certificates</a>
+          </div>
+          <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+          <div class="links">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('skills')">Skills</a>
+            <a href="#" onclick="showSection('certificates')">Certificates</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+        </div>
+    </nav>
+
+    <section id="home">
+      <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="photo.png" alt="" />
+        </div>
+        <div class="content">
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            Hey I'm <span>Ayush Jaiswal</span>
+          </h1>
+          <div
+            class="typewriter"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            I'm a <span></span>
+          </div>
+          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+            I'm a B.Tech 2nd-year Mechatronics student with a strong interest in programming, 
+            skilled in Python, MySQL, and C. My recent project experience in Python and MySQL 
+            reflects my ability to integrate software solutions with engineering principles. 
+            Currently learning full stack web development and after that data science and machine learning.
+          </p>
+          <div
+            class="social-links"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+          >
+            <a href="https://github.com/Ayushgithubs"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ayushjaiswalofficial/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="mailto:ayush.work3025@gmail.com" class="social-link"
+              ><i class="fa fa-envelope" style="font-size: 20px"></i></a
+            >
+          </div>
+          <div
+            class="btn"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+            data-aos-delay="1300"
+          >
+          <a href="Ayush_Jaiswal_Resume.pdf" download="Your_CV.pdf">
+            <button>Download My CV</button>
+        </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="display: none;">
+      <div class="skills-container">
+        <h1>My Skills</h1>
+        <ul>
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Full-Stack Web Development</li>
+          <li>Data Structues and Algorithm</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certificates" style="display: none;">
+      <div class="certificates-container">
+        <h1>My Certificates</h1>
+        <div class="certificates-box">
+          <div class="certificate-box">
+            <p>Git and GitHub </p>
+            <a href="https://verify.letsupgrade.in/certificate/LUEGGSEP12433" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-box">
+            <p>Python Programming</p>
+            <a href="https://www.kaggle.com/learn/certification/ayushinsight/python" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-box">
+            <p>Front end Web Development</p>
+            <a href="front end development.pdf" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-box">
+            <p>Data Structures and Algorithm by Scaler</p>
+            <a href="DSA.pdf" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-box">
+            <p>SQL (Intermediate)</p>
+            <a href="https://www.hackerrank.com/certificates/136fd3a54f3c" target="_blank">View Certificate</a>
+          </div>
+          <div class="certificate-box">
+            <p>Overview of Geocomputation and Geo webservices by ISRO</p>
+            <a href="ISRO.pdf" target="_blank">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" style="display: none;">
+        <div class="projects-container">
+          <h1>My Projects</h1>
+          <ul>
+            <li>
+              School Management System (Python & MySQL)
+            </li>
+            <li>
+              Portfolio Website (HTML & CSS)
+            </li>
+            <!-- Add more projects as needed -->
+          </ul>
+          <div class="github-link">
+            <p>For Source code click below link to Check out my GitHub profile!</p>
+            <a href="https://github.com/Ayushgithubs" target="_blank">
+              <button>Visit My GitHub</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+      function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => (section.style.display = "none"));
+        document.getElementById(sectionId).style.display = "block";
+      }
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+  </body>
+</html>
